@@ -11,6 +11,11 @@ from AppWeb.forms import CursoFormulario, ProfesorFormulario, EstudiantesFormula
 
 def inicio(request):
     return render(request, "AppWeb/inicio.html")
+
+def nueva(self):
+  nuevap = loader.get_template('nueva.html')
+  documento = nuevap.render()
+  return HttpResponse(documento)
     
 
 def curso(request):

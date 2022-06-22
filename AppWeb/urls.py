@@ -13,6 +13,7 @@ urlpatterns = [
     #path('profesorFormulario/', profesorFormulario, name='profesorFormulario'),
     #path('busquedaCamada',  views.busquedaCamada, name="BusquedaCamada"),
     path('buscar/', views.buscar),
+    path('nueva/', views.nueva, name='nueva'),
 ] 
 
 
